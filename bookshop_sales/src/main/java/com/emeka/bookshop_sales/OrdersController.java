@@ -1,5 +1,7 @@
 package com.emeka.bookshop_sales;
 
+import com.emeka.bookshop_sales.services.BookService;
+import com.emeka.bookshop_sales.services.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,11 +19,17 @@ public class OrdersController  {
     @Autowired
     private OrdersRepository ordersRepository;
 
+    @Autowired
+    private BookService bookService;
+
+    @Autowired
+    private StaffService staffService;
+
     @PostMapping("/orders")
     public String sellBooks(@RequestBody OrderRequest orderRequest) {
 
-        String bookName = restTemplate.getForObject("http://bookshop-inventory-service/books/" + orderRequest.getBookId(), String.class);
-        String staffName = restTemplate.getForObject("http://staff-management-service/staff/" + orderRequest.getStaffId(), String.class);
+        String bookName = bookService.getBookName(orderRequest);
+        String staffName = staffService.getStaffName(orderRequest);
 
         Orders order = new Orders();
         order.setBookName(bookName);
@@ -31,6 +39,10 @@ public class OrdersController  {
         ordersRepository.save(order);
         return "Order submitted";
     }
+
+
+
+
 
     @GetMapping("/orders")
     public List<Orders> getOrders() {

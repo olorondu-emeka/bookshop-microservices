@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
+@EnableHystrix
 public class BookshopSalesApplication {
 
     public static void main(String[] args) {
