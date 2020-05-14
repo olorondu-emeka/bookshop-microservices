@@ -38,8 +38,8 @@ To run the project on your local machine, run the following files **together** i
 
 The various services can be tested via Postman with the following URLs: 
 * Inventory - [http://localhost:8081]()  
-* Sales - [http://localhost:8085]()
-* Staff Management - [http://localhost:8080/staff]()
+* Sales - [http://localhost:8085/]()
+* Staff Management - [http://localhost:8080/]()
 
 In addition, the Eureka Server UI can be visualized in the web browser via the URL: [http://localhost:8761]()
 
