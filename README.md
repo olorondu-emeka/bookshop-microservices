@@ -36,10 +36,14 @@ To run the project on your local machine, run the following files **concurrently
 * ***BookshopStaffManagementApplication.java***  
 `bookshop-microservices/bookshop_staff_management/src/main/java/com/emeka/bookshop_staff_management/`
 
+* ***ZuulServiceApplication.java***  
+`bookshop-microservices/zuul_service/src/main/java/com/emeka/zuul_service/`
+
+
 The various services can be tested via Postman with the following URLs: 
-* Inventory - [http://localhost:8075/inventory]()  
-* Sales - [http://localhost:8075/sales]()
-* Staff Management - [http://localhost:8075/staff_manager]()
+* Inventory - [http://localhost:8075/inventory/]()  
+* Sales - [http://localhost:8075/sales/]()
+* Staff Management - [http://localhost:8075/staff_manager/]()
 
 In addition, the Eureka Server UI can be visualized in the web browser via the URL: [http://localhost:8761]()
 
