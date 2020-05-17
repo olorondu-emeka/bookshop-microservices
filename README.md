@@ -23,7 +23,7 @@ System requirements for this project to work includes:
 To install the dependencies in the ***pom.xml***, click on the "import changes" prompt after each service folder contained in the project folder has been opened.
 
 ### Running the project
-To run the project on your local machine, run the following files **together** in the following service directories:  
+To run the project on your local machine, run the following files **concurrently** in the following service directories:  
 * ***BookshopEurekaServerApplication.java***  
 `bookshop-microservices/bookshop_eureka_server/src/main/java/com/emeka/bookshop_eureka_server/`
 
@@ -37,9 +37,9 @@ To run the project on your local machine, run the following files **together** i
 `bookshop-microservices/bookshop_staff_management/src/main/java/com/emeka/bookshop_staff_management/`
 
 The various services can be tested via Postman with the following URLs: 
-* Inventory - [http://localhost:8081]()  
-* Sales - [http://localhost:8085/]()
-* Staff Management - [http://localhost:8080/]()
+* Inventory - [http://localhost:8075/inventory]()  
+* Sales - [http://localhost:8075/sales]()
+* Staff Management - [http://localhost:8075/staff_manager]()
 
 In addition, the Eureka Server UI can be visualized in the web browser via the URL: [http://localhost:8761]()
 
@@ -51,4 +51,4 @@ In addition, the Eureka Server UI can be visualized in the web browser via the U
 * [Eureka Server](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html) - Service Discovery
 * [Hystrix](https://spring.io/guides/gs/circuit-breaker/) - Fault tolerance & resilience
 * [Maven](https://www.npmjs.com/) - Dependency Manager for Java
-
+* [Zuul](https://github.com/Netflix/zuul) - API Gateway
