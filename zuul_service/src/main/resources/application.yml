@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: zuul-service
+
+zuul:
+  routes:
+    bookshop-inventory-service:
+      path: /inventory/**
+      service-id: bookshop-inventory-service
+    bookshop-sales-service:
+      path: /sales/**
+      service-id: bookshop-sales-service
+    staff-management-service:
+      path: /staff_manager/**
+      service-id: staff-management-service
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+
+
+server:
+  port: 8075
