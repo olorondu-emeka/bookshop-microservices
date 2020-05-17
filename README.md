@@ -10,6 +10,12 @@ The features are summarized below:
 * Sell books
 * View sales
 
+### Software Architecture
+The Microservices Architecture for this project is illustrated in the diagram below:
+
+![Bookshop Architecture](images/bookshop_architecture.svg)
+ 
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
 
