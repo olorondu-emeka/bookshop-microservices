@@ -52,7 +52,7 @@ In addition, the Eureka Server UI can be visualized in the web browser via the U
 * [Spring Boot](https://spring.io/projects/spring-boot) - The Java web framework used
 * [MySQL](https://www.mysql.com/) - SQL Database
 * [Spring Data JPA](https://spring.io/projects/spring-data-jpa) - The Object Relational Mapping (ORM) dependency for Spring Boot
-* [Eureka Server](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html) - Service Discovery
+* [Eureka Server](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html) - Service Registry
 * [Hystrix](https://spring.io/guides/gs/circuit-breaker/) - Fault tolerance & resilience
 * [Maven](https://www.npmjs.com/) - Dependency Manager for Java
 * [Zuul](https://github.com/Netflix/zuul) - API Gateway
